@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+ @font-face {
+    font-family: 'Miama Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miama Regular'), url('../font-family/Miama-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Miama';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miama'), url('../font-family/Miama.woff') format('woff');
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -10,14 +24,53 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/***** Section shared *****/  
 :root{
     --primary-color: rgba(255, 255, 255, 1);
     --secondary-color: rgba(255, 255, 255, 0.5);
     --highlighter-color: rgba(230, 83, 60, 1);
 }
+.shared-des{
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+.shared-btn{
+    /* Button */
+    width: 224px;
+    height: 54px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    background: #000;
+
+}
+.btn-txt{
+    /* Join Club Now! */
+    width: 131px;
+    height: 22px;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+/***** End Section shared *****/
+
 body{
     font-size: 16px;
-    border: 2px solid red;
+    font-family: Inter;
+    background: rgba(0, 0, 0, 1);
+    /* border: 2px solid red; */
 }
 /***** Section header *****/ 
 .hero-section{
@@ -27,7 +80,9 @@ body{
     margin: 0px auto;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     background: linear-gradient(180.00deg, rgba(17.411699295043945, 17.411699295043945, 17.411699295043945, 1),rgba(119.41169738769531, 119.41169738769531, 119.41169738769531, 0) 100%);
 }
@@ -41,7 +96,7 @@ nav{
 
     /* border: solid rebeccapurple; */
 }
-.h1, div{
+.h1, div, span{
     padding: 0px;
     margin: 0px;
 }
@@ -135,5 +190,171 @@ padding: 0px 20px 0px 20px;
 
 
 }
+.hero-body{
+    width: 1060px;
+    margin: 96px 0px 0px 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 87.95px;
+}
+.hero-body-info{
+    /* Frame 38 */
+    width: 599.05px;
+    height: 440px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 28px;
+}
+.hero-body-title{
+    width: 520px;
+    height: 282px;
+    color: var(--primary-color);
+    
+}
+.hero-body-title .hero-title{
+    font-family: Inter;
+    font-size: 78px;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0%;
+    line-height: 94px;
+
+}
+.title-spacial{
+    font-family: Miama;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 40px;
+    
+}
+.hero-info-des{
+    width: 520px;
+    height: 48px;
+    text-align: left;
+}
+.hero-info-btn{
+        /* Frame 9 */
+    width: 462px;
+    height: 54px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 14px;
+}
+.join-btn{
+    background: rgba(230, 83, 60, 1);
+    border: none;
+}
+.download-btn{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 1);                                 
+}
+.hero-body-profile{
+    /* Images 2 */
+    width: 349px;
+    height: 580px;
+}
+.video-tutorial{
+    /* Group 24 */
+    width: 206px;
+    height: 217.39px;
+
+    margin-left: -120px;
+    margin-top: -280px;
+
+}
+.free-videos{
+    /* Group 76 */
+    position: relative;
+    width: 193px;
+    height: 98px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px 17px 16px 24px;
+
+    margin-left: 230px;
+    margin-top: -400px;
+    background: rgba(255, 255, 255, 0.1);
+
+}
+#video-count{
+    width: 116px;
+    height: 40px;
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+#video-title{
+    width: 193px;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.btn-icon{
+    /* Group 21 */
+    width: 40px;
+    height: 189.39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 0px 0px 23px 28px;
+}
+.polygon{
+    /* Polygon 1 */
+    width: 14.63px;
+    height: 20px;
+    color: rgba(250, 250, 249, 1);
+}
+.ellips{
+    /*Ellipse2*/
+    width: 40px;
+    height: 40px;
+    background: rgba(230, 83, 60, 1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.video-tutorial-about{
+/* Rectangle 17 */
+    position: relative;
+    z-index: -1;
+    width: 206px;
+    height: 96px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+
+    margin-top: -95px;
+    padding: 20px 23px 20px 75px;
+
+}
+.hero-img{
+    position: relative;
+    z-index: -2;
+}
+
 /***** End Section header *****/
 
