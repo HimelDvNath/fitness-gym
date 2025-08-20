@@ -437,6 +437,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;    
     /* border: 2px solid rebeccapurple; */
+    margin-bottom: 100px;
 }
 .habits-info{
     width: 671px;
@@ -504,6 +505,7 @@ nav ul li a{
     height: 36px;
     font-size: 14px;
     text-align: center;
+
 }
 
 /***** End Section Habits *****/
@@ -514,6 +516,7 @@ nav ul li a{
         height: auto;
         margin: 0px auto;
         margin-top: 750px;
+        margin-bottom: 300px;
     }
     .habits-info{
         margin-bottom: 58px;
@@ -532,5 +535,104 @@ nav ul li a{
 /***** End Section responsive medium and small display *****/
 
 /***** Section run *****/  
+.run{
+    /* Frame 27 */
+    max-width: 1060px;
+    height: 371px;
+    margin: 0px auto;
+    border-radius: 18px;
+    background: rgba(34, 34, 34, 1);
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 165px;
+}
+.run-about{
+    /* Frame 40 */
+    width: 443px;
+    height: 290px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 41px 0px 40px 54px;
+}
+.run-about-title{
+    /* Run an Extra Mile Easily */
+    width: 443px;
+    height: 116px;
+    line-height: 55px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.run-about-des{
+    /* Run an Extra Mile Easily */
+    width: 443px;
+    height: 72px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+.run-about-btn{
+    margin-top: 34px;
+    width: 224px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 16px 40px 16px 40px;
+    background-color: var(--highlighter-color);
+    border: none;
+}
+.run-btn-txt{
+    width: 81px;
+    height: 22px;
+}
+.run-profile img{
+    /* Rectangle 22 */
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+    margin: 30px 32px 29px 0px;
+
+}
 /***** End Section run *****/
+/***** Section responsive for medium and small display *****/  
+@media screen and (min-width:577px) and (max-width:992px) {
+    .run{
+        max-width: 684px;
+        height: 400px;
+        margin: 0px auto;
+        gap: 68px;
+    }
+    .run-about{
+        width: 263px;
+        height: 308px;
+        margin: 46px 0px 46px 54px;
+    }
+    .run-about-title{
+        width: 263px;
+        height: 86px;
+        font-size: 36px;
+    }
+    .run-about-des{
+        width: 263px;
+        height: 120px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    .run-profile img{
+        width: 256px;
+        height: 319px;
+       
+        margin: 40px 43px 41px 0px;
+}
+}
