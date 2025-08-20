@@ -548,6 +548,8 @@ nav ul li a{
     align-items: center;
     text-align: left;
     gap: 165px;
+
+    margin-bottom: 100px;
 }
 .run-about{
     /* Frame 40 */
@@ -612,6 +614,7 @@ nav ul li a{
         height: 400px;
         margin: 0px auto;
         gap: 68px;
+        margin-bottom: 100px;
     }
     .run-about{
         width: 263px;
@@ -636,3 +639,119 @@ nav ul li a{
         margin: 40px 43px 41px 0px;
 }
 }
+/***** Section Training *****/  
+.training{
+    /* Frame 37 */
+    max-width: 1060px;
+    height: 581px;
+    margin: 0px auto;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 58px;
+}
+.training-about{
+    /* Frame 8 */
+    width: 671px;
+    height: 120px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    /* gap: 14px; */
+}
+.training-about-title{
+    width: 573px;
+    height: 58px;
+    
+}
+.training-about-des{
+    width: 671px;
+    height: 48px;
+}
+.training-frame{
+    width: 1060px;
+    height: 403px;
+    background: rgba(34, 34, 34, 1);
+    margin-bottom: 88px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+    "one two two three"
+    "four four five six"
+}
+
+.item1{
+    /* image 8 */
+    background: rgba(6, 255, 210, 0.5);
+    grid-area: one;
+}
+.item2{
+    /* image 6 */
+    background: rgba(255, 0, 0, 0.3);
+    grid-area: two;
+}
+.item3{
+  /* image 11 */
+    background: rgba(0, 0, 0, 0.5);
+    grid-area: three;
+}
+.item4{
+    /* image 7 */
+    background: rgba(0, 0, 0, 0.5);
+    grid-area: four;
+}
+.item5{
+    /* image 10 */
+    background: rgba(66, 255, 0, 0.3);
+    grid-area: five;
+}
+.item6{
+    /* image 9 */
+    background: rgba(0, 71, 255, 0.3);
+    grid-area: six;
+}
+.item1 > img{
+    height: 100%;
+    width: 100%;
+}
+.item2 > img{
+    height: 100%;
+    width: 100%;
+    
+}
+.item3 > img{
+    height: 100%;
+    width: 100%;
+}
+.item4 > img{
+    height: 100%;
+    width: 100%;
+}
+.item5 > img{
+    height: 100%;
+    width: 100%;
+}
+.item6 > img{
+    height: 100%;
+    width: 100%;
+}
+
+/***** End Section Training *****/
+/***** Section responsive for medium and small display *****/  
+@media screen and (min-width:577px) and (max-width:992px) {
+    .training{
+        max-width: 684px;
+        height: 581px;
+        margin: 0px auto;
+    }
+    .training-frame{
+        width: 684px;
+        height: 403px;
+    }
+}
+/***** End Section responsive for medium and small display *****/
