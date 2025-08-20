@@ -651,6 +651,7 @@ nav ul li a{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 58px;
+    margin-bottom: 120px;
 }
 .training-about{
     /* Frame 8 */
@@ -755,3 +756,183 @@ nav ul li a{
     }
 }
 /***** End Section responsive for medium and small display *****/
+/***** Section BMI *****/  
+.bmi{
+    /* Frame 8 */
+    /* margin-top: 5000px; */
+    max-width: 671px;
+    height: 120px;
+    margin: 0px auto;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 150px;
+}
+.bmi-title{
+    width: 353px;
+    height: 58px;
+}
+.bmi-des{
+    width: 671px;
+    height: 48px;
+}
+/***** End Section BMI *****/
+/***** Section responsive for medium and small display *****/  
+@media screen and (min-width:577px) and (max-width:992px) {
+    .bmi{
+        /* Frame 8 */
+        max-width: 595px;
+        height: 120px;
+        margin: 0px auto;
+    }
+    .bmi-des{
+        width: 595px;
+    }
+    
+}
+/***** End Section responsive for medium and small display *****/
+/***** Section BMI chart and Calculation *****/  
+.bmi-chart-calculator{
+    max-width: 1440px;
+    height: 487px;
+    margin: 0px auto;
+    background: rgba(34, 34, 34, 1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 175px;
+    margin-bottom: 100px;
+}
+.bmi-chart{
+    width: 443px;
+    height: 400px;
+}
+.bmi-chart-title{
+    width: 443px;
+    height: 34px;
+    font-size: 28px;
+    margin: 52px 0px 0px 187px;
+    text-align: left;
+}
+.bmi-chart-table{
+    width: 310px;
+    height: 216px;
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
+    margin: 52px 0px 0px 187px;
+}
+table {
+  border-collapse: collapse;
+  
+}
+th{
+    color: var(--primary-color);
+}
+td{
+    color: var(--secondary-color);
+}
+th, td{
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 18px;
+    /* margin: ; */
+}
+.bmi-calculator{
+    /* Frame 40 */
+    width: 577px;
+    height: 386px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 34px;
+    margin: 49px 189px 52px 0px;
+}
+.bmi-calculator-about{
+    /* Frame 8 */
+    width: 577px;
+    height: 96px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    gap: 14px;
+}
+.bmi-calculator-about-title{
+    width: 443px;
+    height: 34px;
+    font-size: 28px;
+    text-align: left;
+}
+.bmi-calculator-about-des{
+    width: 577px;
+    height: 48px;
+}
+form legend{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    
+    flex-wrap: wrap;
+}
+form legend input{
+    /* Button */
+    width: 253px;
+    height: 30px;
+    /* Auto layout */
+    border-radius: 8px;
+    border: none;
+    padding: 12px 40px 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+form legend input:last-child{
+    width: 577px;
+}
+.claculator-btn{
+    width: 224px;
+    height: 54px;
+    background-color: var(--highlighter-color);
+    border: none;
+    /* margin-top: 34px; */
+}
+.claculator-btn span{
+    width: 83px;
+    height: 22px;
+    color: rgba(255, 255, 255, 1);
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+/***** End Section BMI chart and Calculation *****/
+/***** Section responsive for medium and small display *****/  
+@media screen and (min-width:577px) and (max-width:992px) {
+    .bmi-chart-calculator{
+        max-width: 744px;
+        height: 816px;
+        margin: 0px auto;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        gap: 32px;
+    }
+    .bmi-chart-title,
+    .bmi-chart-table{
+        margin: 34px 271px 0px 30px;
+    }
+    .bmi-calculator{
+        margin: 0px 30px 38px 30px;
+    }
+    
+}
+/***** End Section responsive for medium and small display *****/
+
