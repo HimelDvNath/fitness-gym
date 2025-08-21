@@ -924,6 +924,7 @@ form legend input:last-child{
         justify-content: left;
         align-items: left;
         gap: 32px;
+        margin-bottom: 100px;
     }
     .bmi-chart-title,
     .bmi-chart-table{
@@ -936,3 +937,121 @@ form legend input:last-child{
 }
 /***** End Section responsive for medium and small display *****/
 
+/***** Section Our Team *****/  
+.our-team{
+   /* Frame 52 */
+    max-width: 1060px;
+    height: 782px;
+    margin: 0 auto;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 58px; 
+}
+.our-team-about{
+    /* Frame 38 */
+    width: 671px;
+    height: 120px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+}
+.our-team-title{
+    /* Meet Our Team */
+    width: 364px;
+    height: 58px;
+}
+.our-team-des{
+    width: 671px;
+    height: 48px;
+}
+.our-team-cards{
+    width: 1060px;
+    height: 604px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 100px;
+}
+.out-team-card-img{
+    width: 326.67px;
+    height: 272px;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2);
+    filter: grayscale(30%), contrast(20%);
+    -webkit-filter: grayscale(30%), contrast(20%);
+    position: relative;
+    z-index: -1;
+}
+.card-img-about{
+    /* Frame 62 */
+    width: 59px;
+    height: 44px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3px;
+
+    margin-top: -60px;
+    margin-left: 18.67px;
+}
+.name{
+    width: 209px;
+    height: 24px;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 900;
+    /* line-height: 0px; */
+    /* letter-spacing: 0%; */
+    text-align: left;
+}
+.designation{
+    /* Trainer */
+    width: 47px;
+    height: 17px;
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+/***** End Section Our Team *****/
+/***** Section responsive for medium and small display *****/  
+@media screen and (min-width:577px) and (max-width:992px) {
+    .our-team{
+         max-width: 680px;
+         margin: 0 auto;
+         gap: 54px;
+         margin-bottom: 100px;
+    }
+    .our-team-cards{
+        width: 677px;
+        height: 604px;
+    }
+    .out-team-card-img{
+        width: 199px;
+        height: 272px;
+    }
+    .name{
+        width: 148px;
+        height: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+}
+/***** End Section responsive for medium and small display *****/
