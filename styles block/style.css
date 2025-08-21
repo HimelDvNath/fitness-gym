@@ -362,11 +362,6 @@ nav ul li a{
 /***** Section responsive for medium and small display *****/  
 @media screen and (min-width:577px) and (max-width:992px) {
     .hero-section{
-        /* Frame 7 */
-        /* max-width: 744px;
-        height: auto; */
-        /* width: auto; */
-        /* height: 1285px; */
         max-width: 992px;
         height: auto;
         display: flex;
@@ -414,6 +409,75 @@ nav ul li a{
         width: auto;
     }
     
+}
+@media screen and (max-width: 576px) {
+    .hero-section{
+        max-width: 393px;
+        height: 1024px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        gap: 0px;
+    }
+    .hero-body-info{  
+        width: 352px;
+        height: 335px;
+        flex-direction: column;
+        margin: 51px 21px 0px 20px;
+        justify-content: center;
+        align-items: center;
+        gap:28px
+    }
+    .hero-body-title{
+        width: 285px;
+        height: 129px;
+        font-size: 36px;
+        font-weight: 400;
+        /* line-height: 44px;
+        letter-spacing: 0%; */
+        text-align: left;
+    }
+    .hero-body-title .hero-title{
+        font-size: 36px;
+        font-weight: 400;
+        text-align: left;
+        /* letter-spacing: 0%; */
+        /* line-height: auto; */
+    }
+    .title-spacial{
+        font-weight: 400;
+        font-size: 70px;
+        line-height: auto;
+        
+    }
+    .hero-info-des{
+        width: 274px;
+        height: 96px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: left;
+    }
+    nav{ 
+        display: none;
+        width: auto;
+        gap: 180px;
+    }
+    .hero-body-profile{
+        width: 353px;
+        height: 588px;
+    }
+    .hero-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-section{
+        display: none;
+    }
 }
 /***** End Section responsive medium and small display *****/
 
@@ -532,6 +596,89 @@ nav ul li a{
         gap: 40px;
     }
 }
+@media screen and (max-width: 576px){
+    .shared-title{
+        color: var(--primary-color);
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 0px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .shared-des{
+        color: var(--secondary-color);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        text-align: center;
+    }
+    .habit{
+        max-width: 450px;
+        height: 1508px;
+        margin: 0px auto;
+    }
+    .habits{
+        width: 353px;
+        height: 2008px;
+        /* display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center; */
+    }
+    .habits-info{
+        width: 318px;
+        height: 124px;
+        justify-content: flex-start;
+        gap: 14px;
+    }
+    .habits-card-img{
+        margin-top: 25px;
+    }
+    .habits-title{
+        width: 318px;
+        height: 38px;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 0px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .habits-des{
+        width: 316px;
+        height: 72px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        text-align: center;
+    }
+    .habits-cards{
+        width: 30px;
+        height: 1216px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    .habits-card{
+        width: 231px;
+        height: 274px;
+        justify-content: center;
+        justify-content: center;
+        
+    }
+    .habits-card-title{
+        width: 120px;
+        height: 22px;
+    }
+    .habits-card-des{
+        width: 231px;
+        height: 36px;
+    }
+    
+}
 /***** End Section responsive medium and small display *****/
 
 /***** Section run *****/  
@@ -638,6 +785,43 @@ nav ul li a{
        
         margin: 40px 43px 41px 0px;
 }
+}
+@media screen and (max-width: 576px) {
+    .run{
+        /* Frame 27 */
+        max-width: 353px;
+        height: 531px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 31px;
+        margin-bottom: 60px;
+    }
+    .run-about{
+        width: 287px;
+        height: 264px;
+        margin: 31px 33px 0px 33px;
+        gap: 24px;
+    }
+    .run-about-title{
+        width: 287px;
+        height: 76px;
+    }
+    .run-about-des{
+        width: 287px;
+        height: 96px;
+    }
+    .run-profile img{
+        width: 287px;
+        height: 170px;
+        margin: 20px 33px 35px 33px;
+    }
+    .run-about-btn{
+        margin-top: 0px;
+    }
 }
 /***** Section Training *****/  
 .training{
@@ -755,6 +939,45 @@ nav ul li a{
         height: 403px;
     }
 }
+@media screen and (max-width: 576px){
+    .training{
+        max-width: 353px;
+        /* height: 162px; */
+        margin: 0px auto;
+        margin-bottom: 120px;
+    }
+    .training-about{
+        width: 353px;
+        height: 162px;
+        gap: 14px 14px;
+        /* flex-wrap: wrap; */
+    }
+    .training-about-title{
+        width: 331px;
+        height: 76px;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 40px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-wrap: wrap;
+        margin-right: 22px;
+    }
+    .training-about-des{
+        width: 331px;
+        height: 72px;
+        text-align: left;
+    }
+    .training-frame{
+        width: 355px;
+        height: 500px;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-areas:
+            "one one one two two"
+            "three three four four four"
+            "five five five six six"
+    }
+}
 /***** End Section responsive for medium and small display *****/
 /***** Section BMI *****/  
 .bmi{
@@ -789,6 +1012,31 @@ nav ul li a{
     }
     .bmi-des{
         width: 595px;
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .bmi{
+        max-width: 353px;
+        height: 124px;
+        margin: 0px auto;
+        gap: 14px;
+        margin-bottom: 60px;
+    }
+    .bmi-title{
+        width: 236px;
+        height: 38px;
+        font-size: 32px;
+        font-weight: 900;
+    }
+    .bmi-des{
+        width: 353px;
+        height: 72px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        text-align: left;
     }
     
 }
@@ -935,6 +1183,68 @@ form legend input:last-child{
     }
     
 }
+@media screen and (max-width:576px) {
+    .bmi-chart-calculator{
+        max-width: 394px;
+        height: 800px;
+        margin: 0 auto;
+        flex-direction: column;
+        /* gap: 4px; */
+        margin-bottom: 100px;
+        gap: 0px;
+    }
+    .bmi-chart{
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-bottom: 40px;
+        
+    }
+    .bmi-chart-title{
+        margin: 34px 207px 0px 20px;
+    }
+    .bmi-chart-table{
+        margin: 0px 64px 0px 20px;
+    }
+    .bmi-calculator{
+        width: 354px;
+        height: 395px;
+        margin: 0px 20px 43px 20px;
+        margin-top: 0px;
+    }
+    .bmi-calculator-about{
+        width: 354px;
+        height: 105px;
+    }
+    .bmi-calculator-about-title{
+        width: 151px;
+        height: 19px;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 0px;
+    }
+    .bmi-calculator-about-des{
+        width: 346px;
+        height: 72px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        text-align: left;
+    }
+    form legend{
+        align-items: flex-start;
+    }
+    form legend input{
+        width: 110px;
+        height: 48px;
+        padding: 12px 40px 12px 20px;
+    }
+    form legend input:last-child{
+        width: 290px;
+        height: 48px;
+    }
+}
 /***** End Section responsive for medium and small display *****/
 
 /***** Section Our Team *****/  
@@ -1053,6 +1363,48 @@ form legend input:last-child{
         text-overflow: ellipsis;
     }
     
+}
+@media screen and (max-width: 576px) {
+    .our-team{
+        max-width: 353px;
+        height: 1188px;
+        margin: 0 auto;
+        gap: 37px;
+
+        margin-bottom: 800px;
+    }
+    .our-team-about{
+        width: 309px;
+        height: 124px;
+    }
+    .our-team-title{
+        width: 243px;
+        height: 38px;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 0px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .our-team-des{
+        width: 309px;
+        height: 124px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        text-align: center;
+    }
+    .our-team-cards{
+        width: 315px;
+        height: 1800px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .out-team-card-img{
+        width: 313px;
+        height: 272px;
+    }
 }
 /***** End Section responsive for medium and small display *****/
 
@@ -1208,5 +1560,61 @@ footer{
         margin: 41px 213px 0px;
     }
     
+}
+@media screen and (max-width:576px) {
+    footer{
+        max-width: 393px;
+        height: 1306px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+    .footer-container{
+        width: 353px;
+        height: 748px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px 102px;
+        margin: 64px 20px 40px 20px;
+    }
+    .footer-about{
+        width: 317px;
+        height: 200px;
+        /* gap: 20px; */
+    }
+    .footer-title{
+        width: 256px;
+        height: 84px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 0px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .footer-des{
+        width: 317px;
+        height: 96px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        text-align: left;
+    }
+    .footer-started{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .line{
+        margin-top: -20px;
+
+    }
+    .line hr{
+        width: 354px;
+        margin-left: auto;
+        margin: auto;
+    }
+    .line p{
+
+    }
 }
 /***** End Section responsive for medium and small display *****/
